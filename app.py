@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from dash import Dash, dcc, html, Input, Output
+import plotly.express as px
 import plotly.express as px
 
 # Configuração da página
