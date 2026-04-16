@@ -1,5 +1,7 @@
+Este aplicativo serve para baixar os dados do SINAN (meningite), SIM e CIHA (anos 2007 a 2025) referentes ao estado do Rio de Janeiro e convertê-los para os formatos parquet e duckdb, para fins de análise epidemiológica.
+
 # Baixando os banco de dados
-  Este aplicativo serve para baixar os dados do SINAN (meningite), SIM e CIHA (anos 2007 a 2025) referentes ao estado do Rio de Janeiro e convertê-los para os formatos parquet e duckdb, para fins de análise epidemiológica.
+  Ao extrair os arquivos "SINAN - scripts", "CIHA - scripts" e "SIM - scripts" que estão em formato RAR, haverão scripts separados para as diferentes etapas - baixar os arquivos do datasus, processar e compilar o que foi baixado para o formato parquet e para o formato duckdb, separado por ano. Como os dados disponibilizados pelo CIHA são separados por mês para cada respectivo ano, optou-se por mesclar os meses para um único ano, apenas.
   
   Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio da pasta "Bases_Datasus_Municipio_Rio_de_Janeiro" no seguinte link: https://drive.google.com/drive/u/0/folders/1JrFZ1PN3kU11ab2xZWmoO06K1HRPUmM4.
 
@@ -7,11 +9,11 @@
 - **SIM**: óbitos
 - **CIHA**: internações/atendimentos
 
-# *Em Construção * - Painel Streamlit para Parquets do SINAN, SIM e CIHA
+# *Em Construção* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
-Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco nos três bancos de dados supracitados.es:
+Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco nos três bancos de dados supracitados.
 
-## O que o app faz
+  ## O que o app faz
 
 - lê um ou mais Parquets por base
 - aceita **upload** ou **caminho local/glob**
@@ -26,9 +28,9 @@ Este app em Python foi feito para análise epidemiológica a partir de arquivos 
 - permite download em CSV das tabelas agregadas de cada gráfico
 - compara séries temporais entre bases
 
-## Gráficos incluídos
+  ## Gráficos incluídos
 
-### Para SINAN
+  ### Para SINAN
 - série temporal por ano/mês/semana
 - heatmap ano × mês
 - distribuição etária em faixas de 5 anos
@@ -38,7 +40,7 @@ Este app em Python foi feito para análise epidemiológica a partir de arquivos 
 - top municípios
 - completude de campos-chave
 
-### Para SIM
+  ### Para SIM
 - série temporal de óbitos
 - heatmap ano × mês
 - distribuição etária
@@ -47,7 +49,7 @@ Este app em Python foi feito para análise epidemiológica a partir de arquivos 
 - top variáveis de desfecho/local do óbito
 - completude
 
-### Para CIHA
+  ### Para CIHA
 - série temporal de internações/atendimentos
 - heatmap ano × mês
 - distribuição etária
@@ -56,15 +58,15 @@ Este app em Python foi feito para análise epidemiológica a partir de arquivos 
 - top desfechos de saída
 - completude
 
-## Instalação
-
+  ## Instalação
+  
 Crie e ative um ambiente virtual, se desejar, e depois instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Execução
+  ## Execução
 
 No diretório do projeto, rode:
 
@@ -72,12 +74,12 @@ No diretório do projeto, rode:
 streamlit run app_streamlit_epidemiologia.py
 ```
 
-## Como usar
+  ## Como usar
 
 ### Opção 1: upload
 Envie um ou mais arquivos `.parquet` em cada aba da base desejada.
 
-### Opção 2: pasta/glob local
+  ### Opção 2: pasta/glob local
 Informe um padrão local, por exemplo:
 
 ```text
@@ -86,14 +88,14 @@ Bases_Datasus_Municipio_Rio_de_Janeiro/SIM/data/parquet/*.parquet
 Bases_Datasus_Municipio_Rio_de_Janeiro/CIHA/data/parquet/*.parquet
 ```
 
-## Observações importantes
+  ## Observações importantes
 
 - O app foi desenhado para funcionar com layouts **variáveis** do DATASUS, mas pode ser necessário ajustar manualmente as colunas detectadas.
 - Para idade codificada do DATASUS, há a opção **"DATASUS codificada"**. A conversão para anos é aproximada para registros em horas, dias e meses.
 - Se os parquets já estiverem filtrados para um município específico, os gráficos respeitarão esse recorte.
 - A comparação entre bases é **exploratória** e faz mais sentido quando o agravo, o território e a janela temporal são os mesmos.
 
-## Sugestões de uso epidemiológico
+  ## Sugestões de uso epidemiológico
 
 - Use a **série temporal** como gráfico principal para monitorar tendência.
 - Use o **heatmap ano × mês** para sazonalidade.
