@@ -6,7 +6,7 @@ Logo haverá scripts para download e compilação de todos estados disponíveis 
 - **SIM**: óbitos
 - **CIHA**: internações/atendimentos
 
-# Baixando os banco de dados
+# Baixando os bancos de dados
   Ao extrair os arquivos "SINAN - scripts", "CIHA - scripts" e "SIM - scripts" que estão em formato RAR, haverão scripts separados para as diferentes etapas - baixar os arquivos do datasus, processar e compilar o que foi baixado para o formato parquet e para o formato duckdb, separado por ano. Como os dados disponibilizados pelo CIHA são separados por mês para cada respectivo ano, optou-se por mesclar os meses para um único ano, apenas.
   
   Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio da pasta "Bases_Datasus_Comparação_Meningite" no seguinte link: https://drive.google.com/drive/folders/1yffb7yQXL9HlrGP-xrf3ZJKvsJKwbPgg?usp=drive_link.
@@ -20,7 +20,7 @@ Observação: Caso seja necesssário a escolha de um código de município, o c�
 ## O que o app faz
 
 - lê um ou mais Parquets por base
-- aceita **upload** ou **caminho local/glob**
+- aceita **upload** ou **caminho local/glob** -> Eventualmente: fazer com o que o aplicativo já leia automaticamente os bancos de dados em vez de exigir que o usuário faça o upload.
 - detecta automaticamente colunas prováveis de:
   - data
   - sexo
