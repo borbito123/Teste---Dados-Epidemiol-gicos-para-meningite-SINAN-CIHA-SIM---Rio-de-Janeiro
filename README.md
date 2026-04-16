@@ -1,15 +1,15 @@
-Este aplicativo serve para baixar os dados do SINAN (meningite; anos 2007 a 2025), SIM (2007 a 2024) e CIHA (2011 a 2025) referentes ao município e ao estado do Rio de Janeiro, e convertê-los para os respectivos formatos parquet e duckdb, para fins de análise epidemiológica. 
-
-Logo haverá scripts para download e compilação de todos estados disponíveis para um respectivo ano. 
+Este aplicativo serve para baixar os dados do SINAN (meningite; anos 2007 a 2025), SIM (2007 a 2024) e CIHA (2011 a 2025) referentes ao município, ao estado do Rio de Janeiro e a todos os estados, e convertê-los para os respectivos formatos parquet e duckdb, para fins de análise epidemiológica.
 
 - **SINAN**: notificações/casos
 - **SIM**: óbitos
 - **CIHA**: internações/atendimentos
 
 # Baixando os bancos de dados
-  Ao extrair os arquivos "SINAN - scripts", "CIHA - scripts" e "SIM - scripts" que estão em formato RAR, haverão scripts separados para as diferentes etapas - baixar os arquivos do datasus, processar e compilar o que foi baixado para o formato parquet e para o formato duckdb, separado por ano. Como os dados disponibilizados pelo CIHA são separados por mês para cada respectivo ano, optou-se por mesclar os meses para um único ano, apenas.
+Ao extrair os arquivos "SINAN - scripts", "CIHA - scripts" e "SIM - scripts" que estão em formato RAR, haverão scripts separados para as diferentes etapas - baixar os arquivos do datasus, processar e compilar o que foi baixado para o formato parquet e para o formato duckdb, separado por ano. Também foi disponibilizado um arquivo unificado para cada banco de dados.
   
-  Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio da pasta "Bases_Datasus_Comparação_Meningite" no seguinte link: https://drive.google.com/drive/folders/1yffb7yQXL9HlrGP-xrf3ZJKvsJKwbPgg?usp=drive_link.
+Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio dos arquivos "Banco de Dados -...RAR" e da pasta "Bases_Datasus_Comparação_Meningite" no seguinte link: https://drive.google.com/drive/folders/1yffb7yQXL9HlrGP-xrf3ZJKvsJKwbPgg?usp=drive_link.
+
+Observação: Como os dados disponibilizados pelo CIHA são separados por mês para cada respectivo ano, optou-se por mesclar os meses para um único ano, apenas.
 
 # *Em construção e verificação* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
