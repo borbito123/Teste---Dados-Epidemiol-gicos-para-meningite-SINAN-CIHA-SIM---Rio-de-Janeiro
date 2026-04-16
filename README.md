@@ -7,13 +7,9 @@
 - **SIM**: óbitos
 - **CIHA**: internações/atendimentos
 
-# Painel Streamlit para Parquets do SINAN, SIM e CIHA
+# *Em Construção * - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
-Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco em três bases:
-
-- **SINAN**: notificações/casos
-- **SIM**: óbitos
-- **CIHA**: internações/atendimentos
+Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco nos três bancos de dados supracitados.es:
 
 ## O que o app faz
 
