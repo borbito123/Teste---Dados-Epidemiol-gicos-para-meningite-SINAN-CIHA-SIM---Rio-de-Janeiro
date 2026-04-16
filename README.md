@@ -1,6 +1,7 @@
 # Baixando os banco de dados
   Este aplicativo serve para baixar os dados do SINAN (meningite), SIM e CIHA (anos 2007 a 2025) referentes ao estado do Rio de Janeiro e convertê-los para os formatos parquet e duckdb, para fins de análise epidemiológica.
-  Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio da pasta "Bases_Datasus_Municipio_Rio_de_Janeiro", se preferível.
+  
+  Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio da pasta "Bases_Datasus_Municipio_Rio_de_Janeiro" no seguinte link: https://drive.google.com/drive/u/0/folders/1JrFZ1PN3kU11ab2xZWmoO06K1HRPUmM4.
 
 - **SINAN**: notificações/casos
 - **SIM**: óbitos
