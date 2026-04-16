@@ -9,7 +9,9 @@ Este aplicativo serve para baixar os dados do SINAN (meningite), SIM e CIHA (ano
 - **SIM**: óbitos
 - **CIHA**: internações/atendimentos
 
-# *Em Construção* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
+Observação: Caso seja necesssário a escolha de um código de município para o SINAN, o código para o Rio de Janeiro é "330455 ou 3304557". 
+
+# *Em Construção e verificação* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
 Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco nos três bancos de dados supracitados.
 
