@@ -11,7 +11,7 @@ Logo haverá scripts para download e compilação de todos estados disponíveis 
   
   Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio da pasta "Bases_Datasus_Comparação_Meningite" no seguinte link: https://drive.google.com/drive/folders/1yffb7yQXL9HlrGP-xrf3ZJKvsJKwbPgg?usp=drive_link.
 
-# *Em Construção e verificação* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
+# *Em construção e verificação* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
 Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco nos três bancos de dados supracitados.
 
