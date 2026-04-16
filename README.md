@@ -1,4 +1,4 @@
-Este aplicativo serve para baixar os dados do SINAN (meningite; anos 2007 a 2025), SIM (2007 a 2024) e CIHA (2011 a 2025) referentes ao estado do Rio de Janeiro e convertê-los para os formatos parquet e duckdb, para fins de análise epidemiológica.
+Este aplicativo serve para baixar os dados do SINAN (meningite; anos 2007 a 2025), SIM (2007 a 2024) e CIHA (2011 a 2025) referentes ao município e ao estado do Rio de Janeiro, e convertê-los para os respectivos formatos parquet e duckdb, para fins de análise epidemiológica. Também há scripts para download e compilação de todos estados disponíveis para um respectivo ano. 
 
 - **SINAN**: notificações/casos
 - **SIM**: óbitos
