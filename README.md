@@ -5,9 +5,9 @@ Este aplicativo serve para baixar os dados do SINAN (meningite; anos 2007 a 2025
 - **CIHA**: internações/atendimentos
 
 # Baixando os bancos de dados
-Ao extrair os arquivos "SINAN - scripts", "CIHA - scripts" e "SIM - scripts" que estão em formato RAR, haverão scripts separados para as diferentes etapas - baixar os arquivos do datasus, processar e compilar o que foi baixado para o formato parquet e para o formato duckdb, separado por ano. Também foi disponibilizado um arquivo unificado para cada banco de dados.
+Ao extrair os arquivos "SINAN - scripts", "CIHA - scripts" e "SIM - scripts" que estão em formato RAR, haverão scripts separados para as diferentes etapas - baixar os arquivos do datasus, processar e compilar o que foi baixado para o formato parquet e para o formato duckdb, separado por ano.
   
-Também é possível baixar tudo (formatos parquet, duckdb e dbc) diretamente por meio dos arquivos "Banco de Dados -...RAR" e da pasta "Bases_Datasus_Comparação_Meningite" no seguinte link: https://drive.google.com/drive/folders/1yffb7yQXL9HlrGP-xrf3ZJKvsJKwbPgg?usp=drive_link.
+Alternativamente, pode-se baixar os arquivos já compilados diretamente através dos "Banco de Dados" em formato .RAR. Os CIDs incluídos foram: "A170", "A390", "A87", "G00", "G01", "G02", "G03".
 
 Observação: Como os dados disponibilizados pelo CIHA são separados por mês para cada respectivo ano, optou-se por mesclar os meses para um único ano, apenas.
 
