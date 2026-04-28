@@ -11,6 +11,11 @@ Alternativamente, pode-se baixar os arquivos já compilados diretamente através
 
 Observação: Como os dados disponibilizados pelo CIHA são separados por mês para cada respectivo ano, optou-se por mesclar os meses para um único ano, apenas.
 
+# Em construção - Formulário Digital para Investigação de meningite 
+Utilizando XLXsforms, criei um espelho da ficha de investigação de meningite elaborada pelo SINAN. O propósito foi me familiarizar com este formato de planilha e quais possibilidades ela proporciona.
+
+Link: https://kf.kobotoolbox.org/#/forms/aXGhQtpJeTrLUmSqQKFmX4.
+  
 # *Em construção e verificação* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
 Este app em Python foi feito para análise epidemiológica a partir de arquivos `.parquet` do DATASUS, com foco nos três bancos de dados supracitados.
