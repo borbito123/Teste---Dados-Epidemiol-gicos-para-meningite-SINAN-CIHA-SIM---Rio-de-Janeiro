@@ -14,7 +14,7 @@ Observação: Como os dados disponibilizados pelo CIHA são separados por mês p
 # Em construção - Formulário Digital para Investigação de meningite 
 Utilizando XLXsforms, criei um espelho da ficha de investigação de meningite elaborada pelo SINAN. O propósito foi me familiarizar com este formato de planilha e quais possibilidades ela proporciona.
 
-Link: https://kf.kobotoolbox.org/#/forms/aXGhQtpJeTrLUmSqQKFmX4.
+Link: https://ee.kobotoolbox.org/x/ifAQUhNw.
   
 # *Em construção e verificação* - Painel Streamlit para Parquets do SINAN, SIM e CIHA
 
